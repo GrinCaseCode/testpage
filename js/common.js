@@ -2,6 +2,23 @@ $(document).ready(function() {
 
 	//слайдер
 
+	
+
+$(window).on('load', () => {
+  $('.slider_block').slick();
+});
+
+	$('.btn-like').click(function(event) {
+		event.preventDefault();
+		$(this).toggleClass("active");
+	});
+
+
+	$().fancybox({
+  selector : '.slick-slide:not(.slick-cloned) .fancybox',
+  backFocus : false
+});
+
 	$('.slider-billbord').slick({
 		arrows: true,
 		dots: true,
@@ -17,19 +34,6 @@ $(document).ready(function() {
 		}
 		]
 	});
-
-
-
-	$('.btn-like').click(function(event) {
-		event.preventDefault();
-		$(this).toggleClass("active");
-	});
-
-
-	$().fancybox({
-  selector : '[data-fancybox="gallery"]',
-
- });
 
 objectFitImages()
 

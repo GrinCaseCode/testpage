@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-	//слайдер
-
-	
-
-$(window).on('load', () => {
-  $('.slider_block').slick();
-});
 
 	$('.btn-like').click(function(event) {
 		event.preventDefault();
@@ -16,7 +9,10 @@ $(window).on('load', () => {
 
 	$().fancybox({
   selector : '.slick-slide:not(.slick-cloned) .fancybox',
-  backFocus : false
+  backFocus : false,
+  thumbs : {
+		autoStart : true
+	}
 });
 
 	$('.slider-billbord').slick({

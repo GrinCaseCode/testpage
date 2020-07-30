@@ -346,7 +346,7 @@ opacity: 0.4;
 	width: 100% !important;
 	height: auto !important;
 	transform: none !important;
-	cursor: inherit;
+	cursor: inherit !important;
 }
 .fancybox-content img {
 			width: 100%;
